@@ -9,10 +9,10 @@ class CustomReusableTextField extends StatelessWidget {
   final int? maxLength;
   final TextInputType keyboardtype;
   final TextEditingController controller;
-  final FormFieldValidator<String> validator;
+  final FormFieldValidator<String>? validator;
   final VoidCallback? onPressed;
-  final ValueChanged<String> onChange;
-  final FormFieldSetter<String> onSaved;
+  final ValueChanged<String>? onChange;
+  final FormFieldSetter<String>? onSaved;
   const CustomReusableTextField({
     Key? key,
     required this.labelText,
@@ -22,10 +22,10 @@ class CustomReusableTextField extends StatelessWidget {
     this.maxLength,
     required this.keyboardtype,
     required this.controller,
-    required this.validator,
+    this.validator,
     this.onPressed,
-    required this.onChange,
-    required this.onSaved,
+    this.onChange,
+    this.onSaved,
   }) : super(key: key);
 
   @override

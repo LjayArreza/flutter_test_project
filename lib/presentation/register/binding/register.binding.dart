@@ -1,4 +1,4 @@
-import 'package:flutter_test_project/data/repository/user.repository.dart';
+import 'package:flutter_test_project/domain/repositories/user.repository.dart';
 import 'package:flutter_test_project/presentation/register/controller/register.controller.dart';
 import 'package:get/get.dart';
 
