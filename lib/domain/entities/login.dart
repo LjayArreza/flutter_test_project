@@ -4,9 +4,3 @@ class Login {
   String? email;
   String? password;
 }
-
-class LoginResponse {
-  LoginResponse({this.token});
-
-  String? token;
-}

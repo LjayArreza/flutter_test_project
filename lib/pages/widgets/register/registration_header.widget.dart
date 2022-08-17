@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class LoginHeader extends GetWidget {
+class RegistrationHeader extends GetWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
