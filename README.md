@@ -99,3 +99,10 @@ The app app is more like login, register, and fetching of user data using a publ
  Website: https://reqres.in/
 
 ```
+
+# Instruction before using the app
+
+```
+For the login and registration you need to use eve.holt@reqres.in as email. And you can select whatever password you like. Please take time to check the loggers for you to see the response from the api.
+
+```
