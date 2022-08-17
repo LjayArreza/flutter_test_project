@@ -3,7 +3,6 @@ class Error400ResponseModel {
     required this.error,
   });
   late final String error;
-  late final String message;
 
   Error400ResponseModel.fromJson(Map<String, dynamic> json) {
     error = json['error'];

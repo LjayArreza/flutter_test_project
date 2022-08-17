@@ -6,7 +6,10 @@ class CustomReusableTextField extends StatelessWidget {
   final String hintText;
   final bool? isObscure;
   final Widget? suffixIcon;
+  final Color enableBorderColor;
+  final Color fucosedBorderSideColor;
   final int? maxLength;
+  final bool enabled;
   final TextInputType keyboardtype;
   final TextEditingController controller;
   final FormFieldValidator<String>? validator;
@@ -20,6 +23,9 @@ class CustomReusableTextField extends StatelessWidget {
     this.isObscure,
     this.suffixIcon,
     this.maxLength,
+    required this.enabled,
+    required this.enableBorderColor,
+    required this.fucosedBorderSideColor,
     required this.keyboardtype,
     required this.controller,
     this.validator,
@@ -47,6 +53,7 @@ class CustomReusableTextField extends StatelessWidget {
         SizedBox(height: 10),
         TextFormField(
           style: TextStyle(color: Colors.black),
+          enabled: enabled,
           obscureText: isObscure ?? false,
           decoration: InputDecoration(
             counterText: '',
@@ -61,14 +68,18 @@ class CustomReusableTextField extends StatelessWidget {
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.black,
+                color: fucosedBorderSideColor,
               ),
             ),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.black,
+                color: enableBorderColor,
               ),
             ),
+            disabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(
+              color: Colors.white,
+            )),
             suffixIcon: suffixIcon,
           ),
           maxLength: maxLength,

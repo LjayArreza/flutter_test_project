@@ -1,11 +1,12 @@
-import 'package:flutter_test_project/pages/dashboard/view/dashboard.page.dart';
-import 'package:flutter_test_project/pages/landing/view/landing.page.dart';
-import 'package:flutter_test_project/pages/login/view/login.page.dart';
-import 'package:flutter_test_project/pages/register/view/register.page.dart';
-import 'package:flutter_test_project/presentation/dashboard/binding/dashboard.binding.dart';
-import 'package:flutter_test_project/presentation/landing/binding/landing.binding.dart';
-import 'package:flutter_test_project/presentation/login/binding/login.binding.dart';
-import 'package:flutter_test_project/presentation/register/binding/register.binding.dart';
+import 'package:flutter_test_project/pages/views/dashboard/dashboard.page.dart';
+import 'package:flutter_test_project/pages/views/landing/landing.page.dart';
+import 'package:flutter_test_project/pages/views/login/login.page.dart';
+import 'package:flutter_test_project/pages/views/register/register.page.dart';
+import 'package:flutter_test_project/pages/views/user_details/user_details.page.dart';
+import 'package:flutter_test_project/presentation/bindings/dashboard/dashboard.binding.dart';
+import 'package:flutter_test_project/presentation/bindings/landing/landing.binding.dart';
+import 'package:flutter_test_project/presentation/bindings/login/login.binding.dart';
+import 'package:flutter_test_project/presentation/bindings/register/register.binding.dart';
 import 'package:get/route_manager.dart';
 
 part 'routes.dart';
@@ -15,6 +16,11 @@ abstract class AppPages {
     GetPage(
       name: Routes.DASHBOARD,
       page: () => DashboardPage(),
+      binding: DashboardBinding(),
+    ),
+    GetPage(
+      name: Routes.USER_DETAILS,
+      page: () => UserDetailsPage(),
       binding: DashboardBinding(),
     ),
     GetPage(

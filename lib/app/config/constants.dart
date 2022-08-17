@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snippet_coder_utils/hex_color.dart';
+import '../extensions/hex_color.ext.dart';
 
 Color kBackgroundColor = HexColor('FFFFFF');
 Color kSolidButtonColor = HexColor('277bc0');

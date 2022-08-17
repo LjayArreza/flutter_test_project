@@ -26,7 +26,6 @@ class CustomReusableAppbar extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 15),
       child: AppBar(
         title: appbarTitle,
         centerTitle: isTitleCenter,
