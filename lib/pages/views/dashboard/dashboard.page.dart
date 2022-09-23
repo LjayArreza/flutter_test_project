@@ -25,7 +25,7 @@ class DashboardPage extends GetView<DashboardController> {
               isTitleCenter: true,
               backgroundColor: Colors.transparent,
               appbarTitle: CustomReusableText(
-                text: 'THEORIA MEDICAL',
+                text: 'UBX PHILIPPINES',
                 textStyleColor: Colors.black,
                 textStyleFontWeight: FontWeight.bold,
                 textStyleFontSize: 14,

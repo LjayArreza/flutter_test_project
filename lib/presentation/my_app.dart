@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Theoria Medical',
+      title: 'UBX Philippines',
       theme: ThemeData(visualDensity: VisualDensity.adaptivePlatformDensity),
       defaultTransition: Transition.fade,
       initialRoute: Routes.LANDING,

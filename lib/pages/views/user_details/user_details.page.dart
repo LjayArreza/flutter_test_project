@@ -20,7 +20,7 @@ class UserDetailsPage extends GetView<DashboardController> {
             isTitleCenter: true,
             backgroundColor: Colors.transparent,
             appbarTitle: CustomReusableText(
-              text: 'THEORIA MEDICAL',
+              text: 'User Details',
               textStyleColor: Colors.black,
               textStyleFontWeight: FontWeight.bold,
               textStyleFontSize: 14,

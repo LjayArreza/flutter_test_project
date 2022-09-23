@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:flutter_test_project/app/config/constants.dart';
 import 'package:flutter_test_project/pages/widgets/landing/landing_buttons.widget.dart';
 import 'package:flutter_test_project/presentation/controllers/landing/landing.controller.dart';
